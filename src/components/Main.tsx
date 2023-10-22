@@ -3,9 +3,6 @@ import FlashCard from "./FlashCard";
 import { ReactNode, useEffect, useState } from "react";
 
 
-// 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 百, 又, 两, 水, 中, 不, 见, 人, 头, 目, 口, 耳, 手, 足, 大, 小, 多, 少, 我, 有, 左, 来, 右, 个,日, 月, 山, 石, 田, 土, 水, 火, 木, 禾
-
-
 const getFlashCards = (words: string[]): ReactNode => {
   const cards = words.map((eachWord, index) => <FlashCard key={index} bodyText={eachWord} />)
   return cards;
